@@ -83,3 +83,7 @@ The element will be visually hidden but will still be read by screen reader tech
 
 
 /* MY CUSTOM CSS RULES BELOW */
+
+.flex {
+    display: flex;
+}
