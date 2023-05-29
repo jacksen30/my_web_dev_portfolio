@@ -84,6 +84,49 @@ The element will be visually hidden but will still be read by screen reader tech
 
 /* MY CUSTOM CSS RULES BELOW */
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 .flex {
-    display: flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+.primary-nav-bar {
+  background-color: aqua;
+  padding: 1.4em;
+}
+
+.nav__item {
+  /* border: 1px solid black; */
+  padding: 0.5em;
+  font-size: 1.3rem;
+  /* rotate: 15deg; */
+}
+
+.nav__item:hover {
+  background-color: red;
+  color:#fff;
+  rotate: 15deg;
 }
