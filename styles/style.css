@@ -110,6 +110,8 @@ The element will be visually hidden but will still be read by screen reader tech
 .col-hero-text {
   width: 55%;
   color: white;
+  font-family: 'DM Mono', monospace;
+  font-size: 1.35rem;;
 }
 
 a {
@@ -131,6 +133,7 @@ ul {
   /* border: 1px solid black; */
   padding: 0.5em;
   font-size: 1.3rem;
+  font-family: 'Shantell Sans', cursive;
   /* rotate: 15deg; */
   background-color: red;
   color:#fff;
