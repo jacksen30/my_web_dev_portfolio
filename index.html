@@ -17,22 +17,33 @@
 </head>
 <body>
     <header>
-        <nav class="primary-nav-bar">
-            <ul class="flex container">
-                <li class="nav__item"><a href="#">Portfolio</a></li>
-                <li class="nav__item"><a href="#">Qualifications</a></li>
-                <li class="nav__item"><a href="#">Contact Me</a></li>
-            </ul>
-        </nav>
+        <div class="container flex header__inner">
+            <button class="nav-toggle" aria-labelledby="open navigation">
+                <i class="fa-solid fa-bars nav__toggle__btn"></i>
+            </button>
+            <a class="header__logo" href="#">
+                <img src="./img/logo.svg" alt="brand logo" ></img>
+            </a>
+            <nav class="nav flex">
+                <ul class="nav__list flex">
+                    <li class="nav__item"><a href="#" class="nav__link">01. About</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">02. Portfolio</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">03. Contact</a></li>
+                </ul>
+            </nav>
+        </div>  
     </header>
+
     <section class="hero">
         <div class="container flex">
-            <img class="col-hero-img" src="./images/IMG_2883.jpeg" alt="an ai portrait of myself">
             <div class="col-hero-text">
-                <h1>Hello, I'm Jacksen, an aspiring Front-End Engineer.</h1>
+                <h1>Welcome to my website,</h1>
+                <h2>I'm Jacksen,</h2>
+                <h3>I build things for the web</h3>
                 <br/>
                 <p>I'm passionate about delivering clean, modular, and scalable code for exceptional user experiences. I take pride in not only creating visually appealing websites but also building tools that have real functionality and solve real-world problems.</p>
             </div>
+           <!-- <img class="col-hero-img" src="./images/IMG_2883.jpeg" alt="an ai portrait of myself"> THIS NEEDS TO BE MOVED LATER -->
         </div>
     </section>
     <main>
@@ -41,6 +52,9 @@
     </main>
     <footer>
 
-    </footer>   
+    </footer>
+    
+    <script src="main.js"></script>
+
 </body>
 </html>       
