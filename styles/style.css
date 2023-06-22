@@ -89,23 +89,35 @@ The element will be visually hidden but will still be read by screen reader tech
 }
 
 .container {
-  width: 90%;
+  width: 85%;
   max-width: 1100px;
   margin: 0 auto;
+}
+
+section {
+  background-color: #1A1A1D;
+  color: #8892b0;
+  min-height: 150px;
+  font-family: 'DM Mono', monospace;
+  font-size: 1.125rem;
 }
 
 /* Navigation - Header */
 
 header {
   /* width: 100%; */
-   background-color: #2E323F;
+  /* background-color: #2E323F; */
+   background-color: #1A1A1D;
+  
    color: #FFF;
    font-family: 'Oswald', sans-serif;
    font-weight: bold;
+   
+   
 }
 
 .header__inner {
-   padding-top: 1rem;
+   padding: 1rem 0 0 0;
    text-align: center;
    position: relative;   
 }
@@ -149,23 +161,103 @@ header {
    opacity: 0.65;
 }
 
-/*
-.col-hero-img {
-  width: 35%;
-}
 
-.col-hero-text {
-  width: 55%;
-  color: white;
-  font-family: 'DM Mono', monospace;
-  font-size: 1.35rem;;
-}
 
-*/
 .hero{
+  background-color: #1A1A1D;
+  color: #FFF;
+  /*
   background-color: #0a192f;
   color: #FFF;
-  padding: 5rem 0;
-  height: 100vh; /* may cause issue later keep an eye on this */
+  */
+  
+ /* height: 100vh; */ /* may cause issue later keep an eye on this */
 }
 
+.col-hero-img {
+  display: none;
+}
+.col-hero-text {
+  line-height: 1.5;
+}
+
+.hero-text-h1 {
+  color: #0000FF;
+  /* color: #64ffda; */
+  font-family: 'DM Mono', monospace;
+  font-size: 1.35rem;
+}
+
+.hero-text-h2 {
+  color: #0000FF;
+  /* color: #ccd6f6; */
+  font-family: 'DM Mono', monospace;
+  font-size: 1.5rem;
+}
+
+.hero-text-p {
+  color: #8892b0;
+  font-family: 'DM Mono', monospace;
+  font-size: 1.125rem;
+}
+
+.section-heading {
+  color: #0000FF;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;;
+}
+
+
+
+@media (min-width: 850px) {
+    
+  .flex {
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .header__inner {
+      padding-bottom: 1rem;
+  }
+
+  .nav-toggle {
+      display: none;
+  }
+
+  .nav {
+      visibility: visible;
+     }
+
+  .nav--visible {
+      padding-bottom: 0px;
+  }
+
+  .nav__list {
+      margin: 0 0; 
+  }
+
+  .nav__item {
+      margin-left: 1rem;
+  }
+
+  .nav__list--primary {
+      justify-self: center;
+  }
+
+  .nav__item--btn {
+      margin-top: 0;
+  }
+
+  .about-img-of-me {
+    display: none;
+  }
+
+  .col-hero-img {
+    width: 25%;
+  }
+
+  .col-hero-text {
+    width: 60%;
+  }
+
+}
