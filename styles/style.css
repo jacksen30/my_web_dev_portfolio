@@ -100,6 +100,7 @@ section {
   min-height: 150px;
   font-family: 'DM Mono', monospace;
   font-size: 1.125rem;
+  padding: 3rem 0 0 0;
 }
 
 /* Navigation - Header */
@@ -108,18 +109,22 @@ header {
   /* width: 100%; */
   /* background-color: #2E323F; */
    background-color: #1A1A1D;
-  
-   color: #FFF;
+  color: #FFF;
    font-family: 'Oswald', sans-serif;
    font-weight: bold;
-   
+   min-height: 60px; 
    
 }
 
 .header__inner {
    padding: 1rem 0 0 0;
    text-align: center;
-   position: relative;   
+   position: relative;  
+}
+
+.logo1 {
+  max-height: 39px;
+  margin: 0 auto;
 }
 
 .nav {
@@ -166,6 +171,7 @@ header {
 .hero{
   background-color: #1A1A1D;
   color: #FFF;
+  padding: 3rem 0 0 0;
   /*
   background-color: #0a192f;
   color: #FFF;
@@ -199,6 +205,15 @@ header {
   color: #8892b0;
   font-family: 'DM Mono', monospace;
   font-size: 1.125rem;
+}
+
+.social-icon-container {
+  padding-top: 2rem;
+}
+
+.social-icon {
+  margin-right: 0.7rem;
+  color: #b8801e
 }
 
 .section-heading {
