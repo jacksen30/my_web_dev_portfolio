@@ -227,7 +227,7 @@ header {
 form {
   border-radius: 20px;
   color: grey;
-  padding: 0rem; /* Gives the inputs the full width of the form element */
+  padding: 0 0 3rem 0; /* Gives the inputs the full width of the form element */
 }
 
 input {
