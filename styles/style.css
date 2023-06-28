@@ -222,6 +222,13 @@ header {
   padding-bottom: 1rem;;
 }
 
+footer {
+  background-color: #1A1A1D;
+  color: #FFF;
+  padding: 1rem 0;
+  text-align: center;
+}
+
 /* CONTACT FORM ONLY */
 
 form {
@@ -234,7 +241,7 @@ input {
   border: 1px solid gray;
   border-radius: 5px;
   color: hsl(249, 10%, 26%);
-  margin: 15px 0px; /* auto margins not working ?? */
+  margin: 8px 0px; /* auto margins not working ?? */
   font-size: 18.5px;
   font-weight: bold;
   width: 100%;
