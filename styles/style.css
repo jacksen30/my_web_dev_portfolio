@@ -236,6 +236,7 @@ form {
   border-radius: 20px;
   color: grey;
   padding: 0 0 3rem 0; /* Gives the inputs the full width of the form element */
+  margin-top: 2rem;
 }
 
 input {
