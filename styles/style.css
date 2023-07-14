@@ -35,7 +35,7 @@ html:focus-within {
 /* Set core body defaults */
 body {
   min-height: 100vh;
-  text-rendering: optimizeSpeed;
+  /* text-rendering: optimizeSpeed; - CANT BE USED DUE TO SWIPER PREV AND NEXT BUTTONS */
   line-height: 1.5;
 }
 
