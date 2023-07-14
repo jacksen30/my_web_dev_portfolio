@@ -11,7 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Shantell+Sans:wght@500;600&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./styles/swiper.css">
     <link rel="stylesheet" href="./styles/style.css">
+    
     
     <title>Web Dev Jack - Portfolio</title>
 </head>
@@ -72,8 +75,61 @@
                 <h3 class="section-heading">02. Portfolio</h3>
                 <div class="flex">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aperiam laudantium, architecto aut aliquam necessitatibus fugit error dignissimos dolorum, voluptatibus dolorem consequuntur explicabo ea corporis molestiae ducimus eos veniam obcaecati asperiores et nisi facilis libero quidem! Totam non quam recusandae.</p>
-                </div>    
+                </div>
             </div>
+
+                
+                        <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="ss1 slide-img"></div>
+                        <div class="project-card-title">
+                            <h2>Quote Mkr</h2>
+                            <h4>Live Site: <a href="www.quotemkr.com">www.quotemkr.com</a></h4>
+                            <h4>Code Repository: <a href="https://github.com/jacksen30/quote-maker-app" target="_blank">Is Here</a></h4>
+                            <h4>Swipe →  To See More Of My Recent Projects</h4>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="ss2 slide-img"></div>
+                        <div class="project-card-title">
+                            <h2>Quote Mkr</h2>
+                            <h4>Live Site: <a href="www.quotemkr.com">www.quotemkr.com</a></h4>
+                            <h4>Code Repository: <a href="https://github.com/jacksen30/quote-maker-app" target="_blank">Is Here</a></h4>
+                            <h4>Swipe →  To See More Of My Recent Projects</h4>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="ss3 slide-img"></div>
+                        <div class="project-card-title">
+                            <h2>Quote Mkr</h2>
+                            <h4>Live Site: <a href="www.quotemkr.com">www.quotemkr.com</a></h4>
+                            <h4>Code Repository: <a href="https://github.com/jacksen30/quote-maker-app" target="_blank">Is Here</a></h4>
+                            <h4>Swipe ←  To See More Of My Recent Projects</h4>
+                        </div>
+                    </div>
+
+                    
+                    
+                    ...
+                    </div>
+                        <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                        <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev swiper-arrow"></div>
+                    <div class="swiper-button-next swiper-arrow"></div>
+                
+                        <!-- If we need scrollbar -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
+                </div>
+
+
         </section>
 
         <section class="contact" id="contact">
@@ -122,6 +178,8 @@
     </footer>
     
     <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="swiper.js"></script>
     <script src="contact.js"></script>
 
 </body>
