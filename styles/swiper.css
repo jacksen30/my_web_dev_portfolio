@@ -1,42 +1,47 @@
 .swiper {
     margin-top: 75px;
-    
-    max-width: 95%;
-    height: 530px;
+    max-width: 90%;
+    height: 560px;
     /* border: 1px solid black; /* For testing visualisation purposes */
   }
 
-  .slide-img {
+.slide-img {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 370px;
   }
   
-  .ss1 {
+.ss1 {
     background-image: url(../images/msc-2.png);
   }
 
-  .ss2 {
+.ss2 {
     background-image: url(../images/msc-1.png);
   }
 
-  .ss3 {
+.ss3 {
     background-image: url(../images/msc-2.png);
   }
 
-  .project-card-title {
+.project-card-title {
     color: white;
     text-align: center;
   }
 
-  .project-card-title h4 {
+.project-card-title h4 {
     text-align: left;
     padding-left: 15px;
   }
 
-  @media (min-width: 440px) {
+span.swiper-pagination-bullet {
+    background-color: white;
+  }
+
+
+@media (min-width: 440px) {
 
     .swiper {
       max-width: 440px;
     }
-  }
+
+}
