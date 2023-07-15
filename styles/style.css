@@ -243,7 +243,7 @@ input {
   font-size: 18.5px;
   font-weight: bold;
   width: 100%;
-  padding: 1rem;
+  padding: 0.7rem;
 }
 
 /* Use to see & test margin and padding ect
@@ -276,7 +276,7 @@ input {
   font-size: 20px;
   box-shadow: 0px 8px hsla(154, 59%, 51%, 0.9);
   width: 100%;
-  padding: 1rem;
+  padding: 0.5rem;
   margin-top: 0.7rem;
 }
 
