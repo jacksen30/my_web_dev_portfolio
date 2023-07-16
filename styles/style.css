@@ -176,7 +176,7 @@ header {
 
 .hero {
   padding: 3rem 0 0 0;
- /* height: 100vh; */ /* may cause issue later keep an eye on this */
+  height: 100vh; /* may cause issue later keep an eye on this */
 }
 
 .col-hero-img {
@@ -294,6 +294,10 @@ I have used it to visually hide the label text for my form input fields. It will
 
 
 /* END OF CONTACT FORM CODE */
+
+.viewH {
+  height: 100vh;
+}
 
 
 @media (min-width: 850px) {
