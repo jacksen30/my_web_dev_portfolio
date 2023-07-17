@@ -182,6 +182,7 @@ header {
 .col-hero-img {
   display: none;
 }
+
 .col-hero-text {
   line-height: 1.5;
 }
@@ -189,23 +190,23 @@ header {
 .hero-text-h1 {
   color: var(--section-heading-color);
   font-family: 'DM Mono', monospace;
-  font-size: 1.35rem;
+  font-size: 1.5rem;
 }
 
 .hero-text-h2 {
   color: var(--section-heading-color);
   font-family: 'DM Mono', monospace;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 
 .hero-text-p {
   color: var(--text-content-color);
   font-family: 'DM Mono', monospace;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
 }
 
 .social-icon-container {
-  padding-top: 2rem;
+  padding-top: 2.5rem;
 }
 
 .social-icon {
@@ -217,6 +218,10 @@ header {
   color: var(--section-heading-color);
   font-size: 1.5rem;
   padding-bottom: 1rem;;
+}
+
+.about-img-of-me {
+  margin-top: 1.5rem;
 }
 
 footer {
@@ -338,17 +343,29 @@ I have used it to visually hide the label text for my form input fields. It will
   .nav__item--btn {
       margin-top: 0;
   }
-
+  
+  /* For alignment when img is visable to the left on desktop screen sizes */
+  .desktop-left {
+    width: 80%;
+  }
+  
   .about-img-of-me {
     display: none;
   }
 
   .col-hero-img {
+    display: flex;
     width: 25%;
+    height: 25%;
   }
 
   .col-hero-text {
-    width: 60%;
+    width: 85%;
+  }
+
+  /* Fix alignment properly later this is just to center header contents on desktop for time being */
+  .hero-inner-wrapper {
+    padding-top: 70px;
   }
 
 }
