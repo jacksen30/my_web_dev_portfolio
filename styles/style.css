@@ -379,4 +379,13 @@ I have used it to visually hide the label text for my form input fields. It will
     padding-top: 70px;
   }
 
+  /* NEED'S TO BE FIXED - JUST TEMPORARY FORMATTING FOR ABOUT SECTION PARAGRAPHS */
+  .about_p1 {
+    width: 45%;
+  }
+
+  .about_p2 {
+    width: 45%;
+  }
+
 }
