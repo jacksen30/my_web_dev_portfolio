@@ -158,12 +158,19 @@
                             <p class="none error-message"><small>Looks like this is not an email</small></p>
                           </div>
                           
-                
+                        <!-- TESTING OUT USING A TEXTAREA ISTEAD OF THE INPUT FOR THE MESSAGE FIELD
                           <div id="message-wrapper" class="input-control">
                             <label for="message" class="sr-only">Message</label>
                             <input type="text" name="message" id="message" placeholder="Message" value="">
                             <p class="none error-message"><small>Message must be a minimum of 80 characters</small></p>
-                          </div>  
+                          </div>
+                        -->
+
+                          <div id="message-wrapper" class="input-control">
+                            <label for="message-input" class="sr-only">Message</label>
+                            <textarea name="message" id="message-input" placeholder="Write Your Message Here..." value=""></textarea>
+                            <p class="none error-message"><small>Message must be a minimum of 80 characters</small></p>
+                          </div>
                           
                           <button class="submit-btn" type="submit" onclick="validate()">Send</button>
                         </form>

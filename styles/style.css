@@ -251,6 +251,17 @@ input {
   padding: 0.7rem;
 }
 
+textarea {
+  border: 1px solid gray;
+  border-radius: 5px;
+  color: hsl(249, 10%, 26%);
+  margin: 8px 0px; /* auto margins not working ?? */
+  font-size: 18.5px;
+  font-weight: bold;
+  width: 100%;
+  padding: 0.7rem;
+}
+
 /* Use to see & test margin and padding ect
 #fname{
  border: 1px solid green;     
@@ -265,6 +276,7 @@ input {
   border: 3px solid var(--form-input-error-color);
   background: url(../images/icon-error.svg) no-repeat 95%;
  /* padding-left: 15px; */
+ background-color: #FFF;
 }
 
 .error-message {
@@ -284,7 +296,6 @@ input {
   padding: 0.5rem;
   margin-top: 0.7rem;
 }
-
 
 /* sr-only is for screen reader use only - 
 I have used it to visually hide the label text for my form input fields. It will still be read by screen reader technology. */
