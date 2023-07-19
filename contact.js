@@ -41,7 +41,7 @@ function validateEmail(item){
 
 function validateMessage(item){  
     
-    // Currently this function is the same as validateInput(), except it requires an input of atleast 50 characters
+    // Currently this function is the same as validateInput(), except it requires an input of atleast 80 characters
     
 
     if(item[1].value.length < 80){
@@ -68,4 +68,29 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
 
     validate();
-});
+
+    // Check if all fields are valid before submitting
+    if (
+        !fullName[1].classList.contains('incorrect') &&
+        !email[1].classList.contains('incorrect') &&
+        !message[1].classList.contains('incorrect')
+      ) {
+        // Submit the form data to Netlify manually
+        const form = event.target;
+        fetch(form.action, {
+          method: form.method,
+          body: new URLSearchParams(new FormData(form)),
+        })
+          .then((response) => {
+            // Handle the response, e.g., show success message
+            alert('Form submitted successfully!');
+            form.reset(); // Clear the form after successful submission
+          })
+          .catch((error) => {
+            // Handle errors, e.g., show error message
+            alert('Error submitting the form. Please try again later.');
+          });
+      } else {
+        alert('Please fill in all required fields correctly before submitting.');
+      }
+    });
