@@ -315,6 +315,14 @@ I have used it to visually hide the label text for my form input fields. It will
   height: 100vh;
 }
 
+/* New Skills Logos ect - EXPERIMENT TIDY UP LATER */ /* REMEMBER THIS IS MOBILE VIEW */
+
+.skill-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; 
+}
+
 
 @media (min-width: 850px) {
     
@@ -388,4 +396,9 @@ I have used it to visually hide the label text for my form input fields. It will
     width: 45%;
   }
 
+
+  /* TESTING PURPOSES NOT FINAL CODE */
+  .skill-icons {
+    max-width: 45%;
+  }
 }
