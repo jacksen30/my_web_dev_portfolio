@@ -317,10 +317,43 @@ I have used it to visually hide the label text for my form input fields. It will
 
 /* New Skills Logos ect - EXPERIMENT TIDY UP LATER */ /* REMEMBER THIS IS MOBILE VIEW */
 
-.skill-icons {
+.skill-icons-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; 
+  justify-content: space-around;
+  padding-top: 2rem;  /* To provide a gap between certificates list on mobile */
+}
+
+figure {
+  width: 100%;
+  max-width: 144px;
+  padding-bottom: 10px; 
+  transition: all 300ms;
+}
+
+figcaption {
+  margin: 0;
+  font-size: 1.5rem;
+  transform: scale(0);
+  text-align: center;
+  transition: all 300ms;
+}
+
+figure:hover figcaption {
+  /*filter: brightness(80%);*/
+  opacity: 1;
+  transform: scale(0.9);
+}
+
+figure:hover {
+  filter: brightness(90%);
+  opacity: 0.9;
+  transform: scale(0.9);
+}
+
+/* For Certificates List Items */
+ul {
+  margin-left: 0;
 }
 
 
@@ -398,7 +431,15 @@ I have used it to visually hide the label text for my form input fields. It will
 
 
   /* TESTING PURPOSES NOT FINAL CODE */
-  .skill-icons {
+  
+  .skill-icons-wrapper {
+    max-width: 45%;
+    padding-top: 0;
+  }
+  /*
+  .col {
     max-width: 45%;
   }
+  */
+  
 }
