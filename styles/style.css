@@ -220,8 +220,18 @@ header {
   padding-bottom: 1rem;;
 }
 
+.mobile-img-wrapper {
+ /* display: flex; */
+  border-radius: 360px;
+  overflow: hidden;
+  width: 60%;
+  margin: 1.2rem auto;
+ /* padding: 1rem 0 1rem 0; */
+}
 .about-img-of-me {
-  margin-top: 1.5rem;
+ /* margin-top: 1.5rem; */
+
+ transform: scale(1.1);
 }
 
 footer {
@@ -352,8 +362,8 @@ figure:hover {
 }
 
 /* For Certificates List Items */
-ul {
-  margin-left: 0;
+.skills-cert-list {
+  padding-left: 1rem;
 }
 
 
@@ -433,7 +443,7 @@ ul {
   /* TESTING PURPOSES NOT FINAL CODE */
   
   .skill-icons-wrapper {
-    max-width: 45%;
+    max-width: 30%;
     padding-top: 0;
   }
   /*
@@ -441,5 +451,10 @@ ul {
     max-width: 45%;
   }
   */
+
+  .mobile-img-wrapper {
+    width: 0;
+    visibility: hidden;
+  }
   
 }
