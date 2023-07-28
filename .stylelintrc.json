@@ -1,0 +1,8 @@
+{ 
+        "rules": {
+                "indentation": 2,
+                "color-named": "never",
+                "selector-list-comma-space-after": "always-single-line"
+        }
+
+} 

@@ -62,19 +62,19 @@ select {
 /* sr-only is for screen reader use only - 
 The element will be visually hidden but will still be read by screen reader technology. */
 .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-    display: none;
-    z-index: -1;
-    text-indent: -9999px;
-  }
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+  display: none;
+  z-index: -1;
+  text-indent: -9999px;
+}
   
 /*  A big shout out to Andy Bell at https://andy-bell.co.uk/about/ 
     For his great article " A Modern CSS Reset " I recommend giving it a read at https://andy-bell.co.uk/a-modern-css-reset/ 
@@ -116,17 +116,18 @@ section {
 
 header {
   background-color: var(--main-background-color);
-  color: #FFF;
+  color: #fff;
   font-family: 'Oswald', sans-serif;
   font-weight: bold;
   min-height: 60px; 
+  color: #FFF;
    
 }
 
 .header__inner {
-   padding: 1rem 0 0 0;
-   text-align: center;
-   position: relative;  
+  padding: 1rem 0 0 0;
+  text-align: center;
+  position: relative;  
 }
 
 .logo1 {
@@ -135,43 +136,44 @@ header {
 }
 
 .nav {
-   visibility: hidden; /* Hide NAV__LIST at mobile size */
-   height: 0;
-  }
+  visibility: hidden; /* Hide NAV__LIST at mobile size */
+  height: 0;
+  font-size: 140em;
+}
 
 .nav-toggle {
-   cursor: pointer;
-   font-size: 1.25rem;
-   position: absolute; 
-   left: 0;
-   padding-top: 2px;
-   transition: opacity 250ms ease;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute; 
+  left: 0;
+  padding-top: 2px;
+  transition: opacity 250ms ease;
 }
 
 .nav--visible {
-   visibility:visible ;
-   height: auto;
-   padding-bottom: 5px;
+  visibility:visible ;
+  height: auto;
+  padding-bottom: 5px;
 }
 
 .nav__list {
-   list-style: none;
-   text-transform: uppercase;
-   font-size: 1.2rem;
-   padding: 0; /* Fixes the default of ul having a margin-left:40px */
-   margin-top: 60px;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding: 0; /* Fixes the default of ul having a margin-left:40px */
+  margin-top: 60px;
 }
 
 .nav__link {
-   color: #FFF;
-   text-decoration: none;
+  color: #FFF;
+  text-decoration: none;
 }
 
 .nav__link:hover,
 .nav__link:focus,
 .nav-toggle:focus,
 .nav-toggle:hover {
-   opacity: 0.65;
+  opacity: 0.65;
 }
 
 .hero {
@@ -191,12 +193,6 @@ header {
   color: var(--section-heading-color);
   font-family: 'DM Mono', monospace;
   font-size: 1.4rem;
-}
-
-.hero-text-h2 {
-  color: var(--section-heading-color);
-  font-family: 'DM Mono', monospace;
-  font-size: 1.5rem;
 }
 
 .hero-text-p {
@@ -221,17 +217,15 @@ header {
 }
 
 .mobile-img-wrapper {
- /* display: flex; */
+  /* display: flex; */
   border-radius: 360px;
   overflow: hidden;
   width: 55%;
   margin: 0 auto 0.7rem auto;
- /* padding: 1rem 0 1rem 0; */
+  /* padding: 1rem 0 1rem 0; */
 }
 .about-img-of-me {
- /* margin-top: 1.5rem; */
-
- transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 footer {
@@ -245,13 +239,12 @@ footer {
 
 form {
   border-radius: 20px;
-  color: grey;
   padding: 0 0 3rem 0; /* Gives the inputs the full width of the form element */
   margin-top: 2rem;
 }
 
 input {
-  border: 1px solid gray;
+  border: 1px solid #808080;
   border-radius: 5px;
   color: hsl(249, 10%, 26%);
   margin: 8px 0px; /* auto margins not working ?? */
@@ -262,7 +255,7 @@ input {
 }
 
 textarea {
-  border: 1px solid gray;
+  border: 1px solid #808080;
   border-radius: 5px;
   color: hsl(249, 10%, 26%);
   margin: 8px 0px; /* auto margins not working ?? */
@@ -285,8 +278,8 @@ textarea {
 .incorrect {
   border: 3px solid var(--form-input-error-color);
   background: url(../images/icon-error.svg) no-repeat 95%;
- /* padding-left: 15px; */
- background-color: #FFF;
+  /* padding-left: 15px; */
+  background-color: #FFF;
 }
 
 .error-message {
@@ -316,7 +309,7 @@ I have used it to visually hide the label text for my form input fields. It will
   width:1px;
   height:1px;
   overflow:hidden;
-  }
+}
 
 
 /* END OF CONTACT FORM CODE */
@@ -370,45 +363,46 @@ figure:hover {
 @media (min-width: 850px) {
     
   .flex {
-      display: flex;
-      justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
   }
   
   .header__inner {
-      padding-bottom: 1rem;
+    padding-bottom: 1rem;
   }
 
   .nav-toggle {
-      display: none;
+    display: none;
   }
 
   .nav {
-      visibility: visible;
-     }
+    visibility: visible;
+  }
 
   .nav--visible {
-      padding-bottom: 0px;
+    padding-bottom: 0px;
   }
 
   .nav__list {
-      margin: 0 0; 
+    margin: 0 0; 
   }
 
   .nav__item {
-      margin-left: 1rem;
+    margin-left: 1rem;
   }
 
   .nav__list--primary {
-      justify-self: center;
+    justify-self: center;
   }
 
   .nav__item--btn {
-      margin-top: 0;
+    margin-top: 0;
   }
   
   /* For alignment when img is visable to the left on desktop screen sizes */
   .desktop-left {
     width: 80%;
+    margin-top: 4rem; /* FIX LATER - JUST TO TEMPARARILY BRING DOWN IMG ON DESKTOP SCREENS */
   }
   
   .about-img-of-me {
@@ -419,6 +413,7 @@ figure:hover {
     display: flex;
     width: 25%;
     height: 25%;
+    margin-top: 4rem; /* FIX LATER - JUST TO TEMPARARILY BRING DOWN IMG ON DESKTOP SCREENS */
   }
 
   .col-hero-text {
