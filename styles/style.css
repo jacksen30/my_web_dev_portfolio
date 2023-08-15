@@ -173,7 +173,7 @@ header {
 .nav__link:focus,
 .nav-toggle:focus,
 .nav-toggle:hover {
-  opacity: 0.65;
+  opacity: 0.75;
 }
 
 .hero {
@@ -369,6 +369,7 @@ figure:hover {
   
   .header__inner {
     padding-bottom: 1rem;
+    /* padding-left: 35%; */
   }
 
   .nav-toggle {
@@ -389,6 +390,10 @@ figure:hover {
 
   .nav__item {
     margin-left: 1rem;
+  }
+
+  .nav__item:hover {
+    text-decoration: underline #FF3028;
   }
 
   .nav__list--primary {
@@ -423,6 +428,13 @@ figure:hover {
   /* Fix alignment properly later this is just to center header contents on desktop for time being */
   .hero-inner-wrapper {
     padding-top: 70px;
+  }
+
+  .social-icon {
+    transition: 1.2s;
+  }
+  .social-icon:hover {
+    transform: rotateY(360deg);
   }
 
   /* NEED'S TO BE FIXED - JUST TEMPORARY FORMATTING FOR ABOUT SECTION PARAGRAPHS */
