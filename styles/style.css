@@ -151,7 +151,8 @@ header {
 }
 
 .nav--visible {
-  visibility:visible ;
+  /* position: absolute; */ /*ADDED TO TEST DROP DOWN NOT TO AFFECT LAYOUT*/
+  visibility: visible ;
   height: auto;
   padding-bottom: 5px;
 }
@@ -314,9 +315,9 @@ I have used it to visually hide the label text for my form input fields. It will
 
 /* END OF CONTACT FORM CODE */
 
-.viewH {
+/* .viewH {
   height: 100vh;
-}
+} */
 
 /* New Skills Logos ect - EXPERIMENT TIDY UP LATER */ /* REMEMBER THIS IS MOBILE VIEW */
 
