@@ -179,7 +179,6 @@ header {
 
 .hero {
   padding: 1rem 0 0 0;
-  height: 100vh; /* may cause issue later keep an eye on this */
 }
 
 .col-hero-img {
@@ -403,6 +402,10 @@ figure:hover {
 
   .nav__item--btn {
     margin-top: 0;
+  }
+
+  .hero {
+    height: 100vh; /* To Keep Hero Section as 100% of VH for desktop */
   }
   
   /* For alignment when img is visable to the left on desktop screen sizes */
